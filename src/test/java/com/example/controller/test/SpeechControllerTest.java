@@ -23,9 +23,9 @@ public class SpeechControllerTest {
 	@Test
 	public void testgenerateResponse() throws Exception{
 		
-		String url1 = "https://raw.githubusercontent.com/hasan3112/Speech-Project/master/speech-1.csv";
-		String url2 = "htps://raw.githubusercontent.com/hasan3112/Speech-Project/master//speech-1.csv";
-		String url3 = "https://raw.githubusercontent.com/hasan3112/Speech-Project/master/speech-2.csv";
+		String url1 = "https://raw.githubusercontent.com/hasan3112/SpeechRepo/master/speech-1.csv";
+		String url2 = "hps://raw.githubusercontent.com/hasan3112/SpeechRepo/master/speech-1.csv";
+		String url3 = "https://raw.githubusercontent.com/hasan3112/SpeechRepo/master/speech-2.csv";
 		MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.get("/evaluation/?url1="+url1+"&url2="+url2+"&url3="+url3);
 		
 		ResultActions resultActions = mockMvc.perform(requestBuilder);
